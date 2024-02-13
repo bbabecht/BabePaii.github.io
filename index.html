@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Valentine's Sci-Fi Adventure</title>
+<title>Paii's first Valentine with her bf</title>
 <style>
     body {
         font-family: 'Arial', sans-serif;
@@ -14,6 +14,18 @@
     .valentines-decoration {
         max-width: 300px;
         margin: 0 auto 20px;
+        position: relative;
+    }
+    .valentines-decoration img {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+    .asking-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     h2 {
         color: #ff69b4;
@@ -36,23 +48,23 @@
         background-color: #d3d3d3;
         color: black;
     }
-    /* Additional styles can go here */
 </style>
 </head>
 <body>
 
 <div class="valentines-decoration">
-    <img src="DALL·E 2024-02-13 17.09.39 - Design a romantic scene of the same couple standing on the observation deck of a space station, overlooking a distant planet. The man's outfit is a sl.webp" alt="Valentine's Day Decoration">
+    <img src="YOUR_IMAGE_URL_HERE" alt="Valentine's Day Decoration">
     <!-- Repeat the above line for each image, with the correct URL -->
+    <div class="asking-text">
+        <h2>Will you be my Valentine?</h2>
+        <button id="yesButton" class="yes-button" onclick="yesResponse()">Yes ❤️</button>
+        <button id="noButton" class="no-button" onclick="noResponse()">No 💔</button>
+    </div>
 </div>
-
-<h2>Will you be my Valentine?</h2>
-<button id="yesButton" class="yes-button" onclick="yesResponse()">Yes ❤️</button>
-<button id="noButton" class="no-button" onclick="noResponse()">No 💔</button>
 
 <script>
 function yesResponse() {
-    alert("Yay! You made my day! Happy Valentine's Day ❤️");
+    alert("Hooray!! Paii is now Babe's Valentine ❤️");
     document.getElementById('yesButton').disabled = true;
     document.getElementById('noButton').disabled = true;
 }
